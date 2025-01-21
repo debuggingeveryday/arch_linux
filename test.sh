@@ -1,4 +1,4 @@
-sudo pacman -Sy rust feh &&
+sudo pacman -Sy rust feh libdbusmenu-glib &&
 
 git clone https://github.com/elkowar/eww &&
 cd eww &&
