@@ -9,7 +9,7 @@ install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc &&
 cp /etc/X11/xinit/xinitrc ~/.xinitrc &&
 
 # enable service
-systemctl enable --now ly.service &&
+systemctl enable ly.service &&
 
 # modify
 
