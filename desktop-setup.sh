@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # install packages
-pacman -Sy bspwm sxhkd xorg-xinit xorg-server xorg-xinit dunst ly alacritty dmenu neovim &&
+sudo pacman -Sy bspwm sxhkd xorg-xinit xorg-server xorg-xinit dunst ly alacritty dmenu neovim &&
 
 # copy config
 install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc && 
