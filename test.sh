@@ -1,4 +1,4 @@
-sudo pacman -Sy rust feh libdbusmenu-glib &&
+sudo pacman -Sy rust feh libdbusmenu-glib libdbusmenu-gtk3 &&
 
 git clone https://github.com/elkowar/eww &&
 cd eww &&
@@ -6,7 +6,7 @@ cargo build --release --no-default-features --features x11 &&
 cd target/release &&
 chmod +x ./eww &&
 
-cp ./eww /usr/local/bin &&
+sudo cp ./eww /usr/local/bin &&
 
 cd ~/ &&
 
