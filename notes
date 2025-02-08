@@ -1,0 +1,28 @@
+
+# screen shot with qr code
+pacman -Sy maim
+$ maim -qs | zbarimg -q --raw - | xclip -selection clipboard -f
+
+# alacritty legasture
+git clone https://github.com/zenixls2/alacritty
+cd alacritty
+git checkout ligature
+cargo build --release
+sudo mv /usr/bin/alacritty /usr/bin/alacritty.bak
+sudo cp ./target/release/alacritty /usr/bin
+
+font:
+  normal:
+    family: Fira Code
+    style: Regular
+  bold:
+    family: Fira Code
+    style: Bold
+  italic:
+    family: Fira Code
+    style: Italic
+
+# color picker
+
+yay -Sy colorpicker
+colorpicker --short --one-shot --preview | xsel -b
