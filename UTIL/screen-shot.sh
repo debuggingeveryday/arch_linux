@@ -1,5 +1,7 @@
 #/bin/sh
 
+picom &
+
 SCREEN_SHOT_FILE_PATH="$HOME/Pictures/Screen Shot"
 
 date=$(date '+%Y-%m-%d %H:%M:%S')
