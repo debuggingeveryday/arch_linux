@@ -1,6 +1,6 @@
 #/bin/sh
 
-picom &
+#picom &
 
 SCREEN_SHOT_FILE_PATH="$HOME/Pictures/Screen Shot"
 
